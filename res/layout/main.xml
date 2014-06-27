@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff">
+    
+    <ViewFlipper android:id="@+id/mainflip"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent">
+    	<LinearLayout 
+    		android:orientation="vertical"
+    		android:layout_width="fill_parent"
+    		android:layout_height="fill_parent"
+    		android:background="#ffffff">
+			<TextView  
+			    android:text="@string/tired"
+			    android:textSize="50.0sp" 
+			    android:layout_height="wrap_content" 
+			    android:paddingBottom="40.0sp" 
+			    android:paddingTop="40.0sp" 
+			    android:layout_width="fill_parent" 
+			    android:gravity="center_vertical|center_horizontal">
+			</TextView>
+			<Button android:text="Yes" android:id="@+id/tired" android:layout_height="wrap_content" android:layout_width="match_parent"></Button>
+			<Button android:layout_width="match_parent" android:text="No" android:id="@+id/notired" android:layout_height="wrap_content"></Button>
+		</LinearLayout>
+		
+		<LinearLayout 
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:background="#ffffff">
+			<TextView
+				android:text="There's a nap for that"
+				android:textSize="50.0sp"
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:paddingBottom="40.0sp"
+				android:paddingTop="40.0sp"
+				android:gravity="center_vertical|center_horizontal">
+			</TextView>
+			<Button android:text="Exit" android:id="@+id/exit" android:layout_height="wrap_content" android:layout_width="match_parent"></Button>
+		</LinearLayout>
+	</ViewFlipper>
+</LinearLayout>
